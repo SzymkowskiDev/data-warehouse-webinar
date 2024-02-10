@@ -1,0 +1,13 @@
+Session 1:
+[ ] draw.io entity relationship diagram for transactional app
+[ ] physical sql ddl design for transactional app
+[ ] sql for geenrating dummy data in the transactional app
+[ ] deploy transactional database to AWS RDS
+[ ] execute SQL in it to create schema and dummy data
+[ ] draw.io entity relationship diagram for data warehouse
+[ ] physical sql ddl design for data warehouse
+
+Session 2:
+[ ] deploy snowflake to AWS
+[ ] execute SQL in it to create schema
+[ ] set-up change data capture using DMS

@@ -1,4 +1,4 @@
-Session 1:
+Session 1: RDS
 [x] draw.io entity relationship diagram for transactional app
 [x] physical sql ddl design for transactional app
 [x] sql for generating dummy data in the transactional app
@@ -7,10 +7,14 @@ Session 1:
 [x] draw.io entity relationship diagram for data warehouse
 [x] physical sql ddl design for data warehouse
 
-Session 2:
-[ ] create a redshift data warehouse in AWS, frankfurt region
-[ ] execute SQL in it to create schema
+Session 2: REDSHIFT
+[x] create a redshift data warehouse in AWS, frankfurt region
+[x] modify DW schema to remove many-to-many relationship
+[x] adjust schema design to be compliant with Redshift SQL variant
+[x] execute SQL in it to create schema
+
+Session 3: DMS & GLUE
 [ ] set-up change data capture using DMS
 
-Session 3:
+Session 5: SNOWFLAKE
 [ ] deploy snowflake to AWS

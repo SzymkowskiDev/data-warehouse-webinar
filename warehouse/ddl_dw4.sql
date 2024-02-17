@@ -1,7 +1,6 @@
--- denormilizaing action variant
+-- using composite pramy key variant
 
 CREATE TABLE fact_orderlines (
-    order_id INTEGER IDENTITY(1,1) PRIMARY KEY, -- SERIAL not supported use IDENTITY instead
     product_id INTEGER,
     category_id INTEGER,
     date_id INTEGER,
@@ -36,6 +35,9 @@ CREATE TABLE dim_markets (
     market_id INTEGER IDENTITY(1,1) PRIMARY KEY,
     iso_code VARCHAR(2)
 );
+
+-- Add composite PK on fact table
+ALTER TABLE fact_orderlines ADD CONSTRAINT pk_fact_orderlines PRIMARY KEY (product_id, category_id, date_id, market_id, customer_id);
 
 -- Add foreign key constraints
 ALTER TABLE fact_orderlines ADD CONSTRAINT fk_fact_orderlines_customer_id FOREIGN KEY (customer_id) REFERENCES dim_customers(customer_id);

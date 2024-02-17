@@ -1,3 +1,5 @@
+-- linking table variant
+
 CREATE TABLE fact_orders (
     order_id INTEGER IDENTITY(1,1) PRIMARY KEY, -- SERIAL not supported use IDENTITY instead
     customer_id INTEGER,

@@ -1,4 +1,4 @@
--- denormilizaing action variant
+-- factless variant
 
 CREATE TABLE fact_orderlines (
     order_id INTEGER IDENTITY(1,1) PRIMARY KEY, -- SERIAL not supported use IDENTITY instead
@@ -6,8 +6,7 @@ CREATE TABLE fact_orderlines (
     category_id INTEGER,
     date_id INTEGER,
     market_id INTEGER,
-    customer_id INTEGER,
-    amount DECIMAL(10,2)  -- MONEY data type is not supported, use DECIMAL instead
+    customer_id INTEGER
 );
 
 CREATE TABLE dim_date (

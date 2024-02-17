@@ -13,8 +13,8 @@ Session 2: REDSHIFT
 [x] adjust schema design to be compliant with Redshift SQL variant
 [x] execute SQL in it to create schema
 
-Session 3: DMS & GLUE
-[ ] set-up change data capture using DMS
-
-Session 5: SNOWFLAKE
+Session 3: Initial data load with GLUE / SNOWFLAKE
+[ ] produce csv tables fro s3
+[ ] Write Python transforms to fit destination schema
+[ ] Load tables into Redshift
 [ ] deploy snowflake to AWS

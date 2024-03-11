@@ -13,8 +13,7 @@ Session 2: REDSHIFT
 [x] adjust schema design to be compliant with Redshift SQL variant
 [x] execute SQL in it to create schema
 
-Session 3: Initial data load with GLUE / SNOWFLAKE
-[ ] produce csv tables fro s3
-[ ] Write Python transforms to fit destination schema
-[ ] Load tables into Redshift
-[ ] deploy snowflake to AWS
+Session 3: Initial data load with GLUE / REDSHIFT
+[x] produce dummy csv tables for s3
+[x] upload dummy data to s3
+[ ] write ETL scripts to read data from s3, transform it, and load to Redshift

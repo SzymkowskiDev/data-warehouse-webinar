@@ -1,4 +1,4 @@
--- using composite pramy key variant
+-- using composite primary key variant
 
 CREATE TABLE fact_orderlines (
     product_id INTEGER,
